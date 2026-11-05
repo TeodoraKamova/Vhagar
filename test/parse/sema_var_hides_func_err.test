@@ -1,0 +1,10 @@
+void g(void);
+
+int f()
+{
+    int g;
+
+    g();
+}
+##
+parse/sema_var_hides_func_err.c:7:5: error:

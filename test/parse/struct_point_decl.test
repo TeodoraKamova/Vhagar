@@ -1,0 +1,12 @@
+struct Point {
+    int x;
+    int y;
+};
+
+struct Circle {
+    int radius;
+    struct Point* center;
+};
+
+void free1(struct Circle*);
+##

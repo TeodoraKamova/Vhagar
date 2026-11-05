@@ -1,0 +1,14 @@
+struct S
+{
+    int x;
+};
+
+int main()
+{
+    struct S s;
+
+    s.x = 99;
+
+    return s.x;
+}
+

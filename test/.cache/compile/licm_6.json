@@ -1,0 +1,7 @@
+
+{
+    "c4": {
+        "flags": ["--compile", "--optimize"]
+    },
+    "lli": [{ "return-code": 0 }]
+}

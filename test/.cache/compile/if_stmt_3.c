@@ -1,0 +1,21 @@
+int main(int argc, char **argv)
+{
+    if (argc == 1)
+    {
+        if (1 == 1)
+        {
+            return 17;
+        }
+        else
+        {
+            return 18;
+        }
+    }
+    else
+    {
+    }
+
+    return 0;
+}
+
+

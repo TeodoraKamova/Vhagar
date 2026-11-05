@@ -1,0 +1,1 @@
+void implicitly_int_parameters(x, y);

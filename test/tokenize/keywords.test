@@ -1,0 +1,70 @@
+auto
+break
+case
+char
+const
+continue
+default
+do
+double
+else
+enum
+extern
+float
+for
+goto
+if
+inline
+int
+long
+register
+restrict
+return
+short
+signed
+sizeof
+static
+struct
+switch
+typedef
+union
+unsigned
+void
+volatile
+while
+
+##
+tokenize/keywords.c:1:1: keyword auto
+tokenize/keywords.c:2:1: keyword break
+tokenize/keywords.c:3:1: keyword case
+tokenize/keywords.c:4:1: keyword char
+tokenize/keywords.c:5:1: keyword const
+tokenize/keywords.c:6:1: keyword continue
+tokenize/keywords.c:7:1: keyword default
+tokenize/keywords.c:8:1: keyword do
+tokenize/keywords.c:9:1: keyword double
+tokenize/keywords.c:10:1: keyword else
+tokenize/keywords.c:11:1: keyword enum
+tokenize/keywords.c:12:1: keyword extern
+tokenize/keywords.c:13:1: keyword float
+tokenize/keywords.c:14:1: keyword for
+tokenize/keywords.c:15:1: keyword goto
+tokenize/keywords.c:16:1: keyword if
+tokenize/keywords.c:17:1: keyword inline
+tokenize/keywords.c:18:1: keyword int
+tokenize/keywords.c:19:1: keyword long
+tokenize/keywords.c:20:1: keyword register
+tokenize/keywords.c:21:1: keyword restrict
+tokenize/keywords.c:22:1: keyword return
+tokenize/keywords.c:23:1: keyword short
+tokenize/keywords.c:24:1: keyword signed
+tokenize/keywords.c:25:1: keyword sizeof
+tokenize/keywords.c:26:1: keyword static
+tokenize/keywords.c:27:1: keyword struct
+tokenize/keywords.c:28:1: keyword switch
+tokenize/keywords.c:29:1: keyword typedef
+tokenize/keywords.c:30:1: keyword union
+tokenize/keywords.c:31:1: keyword unsigned
+tokenize/keywords.c:32:1: keyword void
+tokenize/keywords.c:33:1: keyword volatile
+tokenize/keywords.c:34:1: keyword while

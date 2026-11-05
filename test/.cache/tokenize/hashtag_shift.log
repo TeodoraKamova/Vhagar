@@ -1,0 +1,4 @@
+tokenize/hashtag_shift.c:1:1: punctuator #
+tokenize/hashtag_shift.c:1:2: punctuator >
+tokenize/hashtag_shift.c:2:1: punctuator #
+tokenize/hashtag_shift.c:2:2: punctuator >>

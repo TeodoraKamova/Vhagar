@@ -1,0 +1,25 @@
+int main()
+{
+    if (sizeof(int) != 4)
+        return 1;
+
+    if (sizeof(char) != 1)
+        return 2;
+
+    int* a;
+    char* b;
+
+    a = 0;
+    b = 0;
+
+    if ((char *)(a + 1) != (b + 4))
+        return 3;
+
+    return 0;
+}
+
+##
+
+{
+    "lli": [{ "return-code": 0 }]
+}

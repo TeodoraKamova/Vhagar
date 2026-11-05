@@ -1,0 +1,23 @@
+int f()
+{
+    return 99;
+}
+
+int main()
+{
+    int x;
+    x = 0;
+
+    if (x)
+        return 1;
+
+    if (0)
+        return 1;
+
+    if (f())
+        return 99;
+
+    // unreachable
+    return 1;
+}
+

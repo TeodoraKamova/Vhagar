@@ -1,0 +1,7 @@
+int (*(f(void)))(void);
+
+int (*(g(void)));
+
+int (*(h(void)));
+
+int (*(i(void)));

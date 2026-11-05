@@ -1,0 +1,15 @@
+int apply(int (*f)(int, int))
+{
+    return f(2, 9);
+}
+
+int foo(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    return apply(foo);
+}
+

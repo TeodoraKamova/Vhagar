@@ -1,0 +1,27 @@
+int main(int argc, char **argv)
+{
+    if (argc == 1)
+        goto A;
+    else
+        goto B;
+
+A:
+B:
+    return 99;
+}
+
+##
+
+{
+    "c4": { "args": ["--compile", "--verify"] },
+    "lli": [
+        {
+            "args": [],
+            "return-code": 99
+        },
+        {
+            "args": ["a", "b", "c"],
+            "return-code": 99
+        }
+    ]
+}

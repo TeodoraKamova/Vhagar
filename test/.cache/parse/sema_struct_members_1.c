@@ -1,0 +1,16 @@
+struct A
+{
+    int x;
+};
+
+struct B
+{
+    struct A a; // everything legit until here
+};
+
+struct S; // incomplete type
+
+struct T
+{
+    struct S s; // not legit...
+};

@@ -1,0 +1,4 @@
+int (d(int (f(int))));
+
+##
+int (d(int (f(int))));

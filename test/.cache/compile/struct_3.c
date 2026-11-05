@@ -1,0 +1,26 @@
+struct T
+{
+    int a;
+    int b;
+};
+
+int test3(struct T **tpp)
+{
+    return (*tpp)->a + (**tpp).b;
+}
+
+int main()
+{
+    struct T t;
+    struct T *tp;
+    struct T **tpp;
+
+    t.a = 2;
+    t.b = 9;
+
+    tp = &t;
+    tpp = &tp;
+
+    return test3(tpp);
+}
+

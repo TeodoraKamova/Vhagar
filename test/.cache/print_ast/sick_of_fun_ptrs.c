@@ -1,0 +1,3 @@
+int *(*(p(int (f(char)))))(int);
+int *(*(*p)(int (*f)(char)))(int);
+

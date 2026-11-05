@@ -1,0 +1,24 @@
+int main(int argc, char **argv)
+{
+    if (argc == 1)
+    {
+        return 15;
+    }
+
+    return 7;
+}
+
+##
+
+{
+    "lli": [
+        {
+            "args": [],
+            "return-code": 15
+        },
+        {
+            "args": ["a"],
+            "return-code": 7
+        }
+    ]
+}

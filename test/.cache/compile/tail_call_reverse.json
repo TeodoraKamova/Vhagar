@@ -1,0 +1,5 @@
+
+{
+    "c4" : {"args" : [ "--compile", "--optimize" ]},
+           "lli" : [ {"c4lib" : true, "args" : [], "return-code" : 0, "stdout" : "Hello World!"} ]
+}

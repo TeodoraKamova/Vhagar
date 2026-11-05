@@ -1,0 +1,35 @@
+void* c4_malloc(int);
+
+int sum_helper(int* arr, int i, int size, int acc)
+{
+    if (i >= size)
+        return acc;
+    return sum_helper(arr, i + 1, size, acc + arr[i]);
+}
+
+int sum(int* arr, int size) { return sum_helper(arr, 0, size, 0); }
+
+int main()
+{
+    int* arr;
+    int size;
+    size = 10;
+    arr = c4_malloc(size * sizeof(int));
+
+    // thanks gpt for the random values
+    arr[0] = 10;          // Example value
+    arr[1] = -20;         // Example value
+    arr[2] = 35;          // Example value
+    arr[3] = -50;         // Example value
+    arr[4] = 75;          // Example value
+    arr[5] = -100;        // Example value
+    arr[6] = 0;           // Example value
+    arr[7] = 45;          // Example value
+    arr[8] = -80;         // Example value
+    arr[9] = 60 + 2 * 25; // my value :)
+
+    // i know we have memory leek, but the sys cleans up for us :)
+    // (and we need it til here anyways...)
+    return sum(arr, size);
+}
+

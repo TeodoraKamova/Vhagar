@@ -1,0 +1,19 @@
+int main(int argc, char **argv)
+{
+    return argc;
+}
+
+##
+
+{
+    "lli": [
+        {
+            "args": [],
+            "return-code": 1
+        },
+        {
+            "args": ["a", "b", "c"],
+            "return-code": 4
+        }
+    ]
+}

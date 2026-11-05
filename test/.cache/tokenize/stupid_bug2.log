@@ -1,0 +1,6 @@
+tokenize/stupid_bug2.c:1:1: punctuator <<
+tokenize/stupid_bug2.c:1:3: punctuator [
+tokenize/stupid_bug2.c:1:4: punctuator <<
+tokenize/stupid_bug2.c:2:1: punctuator >>
+tokenize/stupid_bug2.c:2:3: punctuator [
+tokenize/stupid_bug2.c:2:4: punctuator <<

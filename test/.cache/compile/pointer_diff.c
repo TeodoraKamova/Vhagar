@@ -1,0 +1,13 @@
+int diff(int *f, int *g)
+{
+    return f - g;
+}
+
+int main()
+{
+    int x;
+    int y;
+
+    return diff(&x, &y) * 10; // not sure if this is ub
+}
+

@@ -1,0 +1,10 @@
+++ -- || && ##
++|
+##
+tokenize/double_operator.c:1:1: punctuator ++
+tokenize/double_operator.c:1:4: punctuator --
+tokenize/double_operator.c:1:7: punctuator ||
+tokenize/double_operator.c:1:10: punctuator &&
+tokenize/double_operator.c:1:13: punctuator ##
+tokenize/double_operator.c:2:1: punctuator +
+tokenize/double_operator.c:2:2: punctuator |

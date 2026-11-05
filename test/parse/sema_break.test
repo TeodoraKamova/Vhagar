@@ -1,0 +1,4 @@
+int main() { break; }
+
+##
+parse/sema_break.c:1:14: error:

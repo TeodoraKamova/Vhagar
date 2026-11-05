@@ -1,0 +1,27 @@
+
+int f(int a, int b, int n)
+{
+    &n; // budget noinline
+
+    int s; s = 0;
+
+    int i;
+    i = 0;
+
+    if (a == b)
+        goto INSIDE_LOOP;
+
+    for (; i < n; ++i)
+    {
+INSIDE_LOOP:
+        s += i * (a - b);
+    }
+
+    return s;
+}
+
+int main()
+{
+    return f(2, 3, 4) % 256;
+}
+

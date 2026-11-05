@@ -1,0 +1,15 @@
+int main()
+{
+    goto LABEL;
+
+LABEL:
+    return 99;
+}
+
+
+##
+
+{
+    "c4": { "args": ["--compile", "--verify"] },
+    "lli": [{ "return-code": 99 }]
+}

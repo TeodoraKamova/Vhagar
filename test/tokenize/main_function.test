@@ -1,0 +1,20 @@
+int main(int argc, char **argv) {
+    return 0;
+}
+## expected output:
+tokenize/main_function.c:1:1: keyword int
+tokenize/main_function.c:1:5: identifier main
+tokenize/main_function.c:1:9: punctuator (
+tokenize/main_function.c:1:10: keyword int
+tokenize/main_function.c:1:14: identifier argc
+tokenize/main_function.c:1:18: punctuator ,
+tokenize/main_function.c:1:20: keyword char
+tokenize/main_function.c:1:25: punctuator *
+tokenize/main_function.c:1:26: punctuator *
+tokenize/main_function.c:1:27: identifier argv
+tokenize/main_function.c:1:31: punctuator )
+tokenize/main_function.c:1:33: punctuator {
+tokenize/main_function.c:2:5: keyword return
+tokenize/main_function.c:2:12: constant 0
+tokenize/main_function.c:2:13: punctuator ;
+tokenize/main_function.c:3:1: punctuator }

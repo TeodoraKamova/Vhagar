@@ -1,0 +1,1 @@
+void print_point(struct Point { int x;int y; } *p) {  }

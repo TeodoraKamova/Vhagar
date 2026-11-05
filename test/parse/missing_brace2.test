@@ -1,0 +1,8 @@
+int f() {
+    return 0;
+
+int g() {
+    return 0;
+}
+##
+parse/missing_brace2.c:4:9: error:

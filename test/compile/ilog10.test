@@ -1,0 +1,35 @@
+int ilog10(int x)
+{
+    if (x > 99)
+    {
+        if (x < 1000000)
+        {
+            if (x < 10000)
+                return 3 + ((x - 1000) / 1073741824) / 2;
+            else
+                return 5 + ((x - 10000) / 1073741824) / 2;
+        }
+        else
+        {
+            if (x < 100000000)
+                return 7 + ((x - 10000000) / 1073741824) / 2;
+            else
+                return 9 + ((x - 1000000000) / 1073741824) / 2;
+        }
+    }
+    else
+    {
+        if (x > 9)
+            return 1;
+        else
+            return ((x - 1) / 1073741824) / 2;
+    }
+}
+
+int main() { return ilog10(1202002) != 7; }
+
+##
+
+{
+    "lli": [{ "return-code": 0 }]
+}

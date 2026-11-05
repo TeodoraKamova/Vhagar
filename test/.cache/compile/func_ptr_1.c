@@ -1,0 +1,14 @@
+int foo(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int (*var)(int, int);
+
+    var = &foo;
+
+    return var(2, 9);
+}
+

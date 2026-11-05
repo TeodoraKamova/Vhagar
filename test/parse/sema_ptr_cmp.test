@@ -1,0 +1,11 @@
+int main()
+{
+    int *p;
+    char *q;
+
+    (p == q);
+
+    return 0;
+}
+##
+parse/sema_ptr_cmp.c:6:8: error:

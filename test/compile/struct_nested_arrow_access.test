@@ -1,0 +1,38 @@
+struct S
+{
+    int a;
+    struct T
+    {
+        int b;
+        int c;
+    } *t;
+} *s;
+
+int main()
+{
+    struct S *s;
+    struct S m;
+    struct T n;
+
+    s = &m;
+    s->t = &n;
+
+    s->a = 9;
+    s->t->b = 4;
+    s->t->c = 6;
+
+    return s->a + s->t->b + s->t->c;
+}
+
+##
+
+{
+    "c4": {
+        "args": ["--compile", "--verify"]
+    },
+    "lli": [
+        {
+            "return-code": 19
+        }
+    ]
+}

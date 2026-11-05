@@ -1,0 +1,33 @@
+int c4_atoi(char*);
+void c4_print_int(int);
+void c4_print_str(char*);
+
+int foo(int n) { return n * -16; }
+
+int main(int argc, char** argv)
+{
+    int i;
+    int d;
+    for (i = 1; i < argc; ++i)
+    {
+        d = c4_atoi(argv[i]);
+        d = foo(d);
+        c4_print_int(d);
+        c4_print_str(" ");
+    }
+    return 0;
+}
+
+##
+
+{
+    "c4" : {"args" : [ "--compile", "--optimize" ]}, "lli" : [ {
+        "c4lib" : true,
+        "args" : [
+            "1596", "1574", "12613", "123", "56456", "12", "13", "2147483647", "-123456789", "0",
+            "987654321", "-2147483648", "567890123", "-987654321", "123456789", "-1", "42"
+        ],
+        "return-code" : 0,
+        "stdout" : "-25536 -25184 -201808 -1968 -903296 -192 -208 16 1975308624 0 1377400048 0 -496307376 -1377400048 -1975308624 16 -672 "
+    } ]
+}

@@ -1,0 +1,28 @@
+void c4_print_int(int);
+
+int main()
+{
+    char a;
+    char b;
+
+    a = (char)127;
+    b = (char)1;
+
+    // nevermind, we dont do overflow
+    // but instead convert it to an int
+    c4_print_int((int)(a + b));
+
+    return 0;
+}
+
+##
+
+{
+    "lli": [
+        {
+            "c4lib": true,
+            "return-code": 0,
+            "stdout": "128"
+        }
+    ]
+}

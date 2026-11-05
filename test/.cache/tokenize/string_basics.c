@@ -1,0 +1,5 @@
+""
+"abc 123"
+"./;',<>[]=-+_|%@:"
+"abcgldvhboqoehoiabvxojboijQKLNFJZCNLVNNJAKRJTGOIPQHAJKXBLsncjvhwoibgkajzbvlkhlsjjpfqjobxcojbhpi2jibsodb-92biohzcivho2hepihsdhboijogiwhsjdbcvjlhoishjgijflkcnbljzbjlvhoiqehiogoisvlk"
+" return // struct 'u' "

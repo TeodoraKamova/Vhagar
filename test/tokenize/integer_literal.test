@@ -1,0 +1,8 @@
+4
+123
+2147483647
+
+##
+tokenize/integer_literal.c:1:1: constant 4
+tokenize/integer_literal.c:2:1: constant 123
+tokenize/integer_literal.c:3:1: constant 2147483647

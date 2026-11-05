@@ -1,0 +1,19 @@
+int foo(int, int);
+
+int main()
+{
+    int (*var)(int, int);
+    var = &foo;
+
+    if (var)
+        return var(2, 9);
+    return 1;
+}
+
+int foo(int a, int b)
+{
+    if (a == 2 && b == 9)
+        return 0;
+    return a + b;
+}
+

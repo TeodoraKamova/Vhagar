@@ -1,0 +1,19 @@
+int puts(char *);
+
+int main()
+{
+    int x;
+    x = 1;
+
+    char *msg;
+    msg = "should not be printed!";
+
+    if (0 == 1 && 0 == puts(msg))
+        x = 98;
+
+    if (1 == 1 || 0 == puts(msg))
+        x = 99;
+
+    return x;
+}
+

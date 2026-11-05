@@ -1,0 +1,21 @@
+int puts(char *);
+
+int main()
+{
+    char *msg;
+
+    msg = "Hello, World!";
+
+    return puts(msg);
+}
+
+##
+
+{
+    "lli": [
+        {
+            "return-code": 14,
+            "stdout": "Hello, World!\n"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+[
+]
+(
+)
+{
+}
+.
+->
+++
+--
+&
+*
++
+-
+~
+!
+/
+%
+<<
+>>
+<
+>
+<=
+>=
+==
+!=
+^
+|
+&&
+||
+?
+:
+;
+...
+=
+*=
+/=
+%=
++=
+-=
+<<=
+>>=
+&=
+^=
+|=
+,
+## expected output:
+tokenize/punctuators.c:1:1: punctuator [
+tokenize/punctuators.c:2:1: punctuator ]
+tokenize/punctuators.c:3:1: punctuator (
+tokenize/punctuators.c:4:1: punctuator )
+tokenize/punctuators.c:5:1: punctuator {
+tokenize/punctuators.c:6:1: punctuator }
+tokenize/punctuators.c:7:1: punctuator .
+tokenize/punctuators.c:8:1: punctuator ->
+tokenize/punctuators.c:9:1: punctuator ++
+tokenize/punctuators.c:10:1: punctuator --
+tokenize/punctuators.c:11:1: punctuator &
+tokenize/punctuators.c:12:1: punctuator *
+tokenize/punctuators.c:13:1: punctuator +
+tokenize/punctuators.c:14:1: punctuator -
+tokenize/punctuators.c:15:1: punctuator ~
+tokenize/punctuators.c:16:1: punctuator !
+tokenize/punctuators.c:17:1: punctuator /
+tokenize/punctuators.c:18:1: punctuator %
+tokenize/punctuators.c:19:1: punctuator <<
+tokenize/punctuators.c:20:1: punctuator >>
+tokenize/punctuators.c:21:1: punctuator <
+tokenize/punctuators.c:22:1: punctuator >
+tokenize/punctuators.c:23:1: punctuator <=
+tokenize/punctuators.c:24:1: punctuator >=
+tokenize/punctuators.c:25:1: punctuator ==
+tokenize/punctuators.c:26:1: punctuator !=
+tokenize/punctuators.c:27:1: punctuator ^
+tokenize/punctuators.c:28:1: punctuator |
+tokenize/punctuators.c:29:1: punctuator &&
+tokenize/punctuators.c:30:1: punctuator ||
+tokenize/punctuators.c:31:1: punctuator ?
+tokenize/punctuators.c:32:1: punctuator :
+tokenize/punctuators.c:33:1: punctuator ;
+tokenize/punctuators.c:34:1: punctuator ...
+tokenize/punctuators.c:35:1: punctuator =
+tokenize/punctuators.c:36:1: punctuator *=
+tokenize/punctuators.c:37:1: punctuator /=
+tokenize/punctuators.c:38:1: punctuator %=
+tokenize/punctuators.c:39:1: punctuator +=
+tokenize/punctuators.c:40:1: punctuator -=
+tokenize/punctuators.c:41:1: punctuator <<=
+tokenize/punctuators.c:42:1: punctuator >>=
+tokenize/punctuators.c:43:1: punctuator &=
+tokenize/punctuators.c:44:1: punctuator ^=
+tokenize/punctuators.c:45:1: punctuator |=
+tokenize/punctuators.c:46:1: punctuator ,

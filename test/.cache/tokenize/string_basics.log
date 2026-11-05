@@ -1,0 +1,5 @@
+tokenize/string_basics.c:1:1: string-literal ""
+tokenize/string_basics.c:2:1: string-literal "abc 123"
+tokenize/string_basics.c:3:1: string-literal "./;',<>[]=-+_|%@:"
+tokenize/string_basics.c:4:1: string-literal "abcgldvhboqoehoiabvxojboijQKLNFJZCNLVNNJAKRJTGOIPQHAJKXBLsncjvhwoibgkajzbvlkhlsjjpfqjobxcojbhpi2jibsodb-92biohzcivho2hepihsdhboijogiwhsjdbcvjlhoishjgijflkcnbljzbjlvhoiqehiogoisvlk"
+tokenize/string_basics.c:5:1: string-literal " return // struct 'u' "

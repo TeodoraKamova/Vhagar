@@ -1,0 +1,14 @@
+
+{
+    "lli": [
+        {
+            "c4lib": true,
+            "stdout": "0"
+        },
+        {
+            "c4lib": true,
+            "args": ["yo"],
+            "stdout": ""
+        }
+    ]
+}

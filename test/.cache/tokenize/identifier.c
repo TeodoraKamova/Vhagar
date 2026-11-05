@@ -1,0 +1,8 @@
+__ident_with_underscores_123
+does_this_lexer_support_sixty_three_character_long_identifiers
+_
+a0B1_c3
+uint32_t
+int_
+CAPSLOCK_IDENTIFIER1
+

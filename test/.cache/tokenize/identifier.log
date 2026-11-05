@@ -1,0 +1,7 @@
+tokenize/identifier.c:1:1: identifier __ident_with_underscores_123
+tokenize/identifier.c:2:1: identifier does_this_lexer_support_sixty_three_character_long_identifiers
+tokenize/identifier.c:3:1: identifier _
+tokenize/identifier.c:4:1: identifier a0B1_c3
+tokenize/identifier.c:5:1: identifier uint32_t
+tokenize/identifier.c:6:1: identifier int_
+tokenize/identifier.c:7:1: identifier CAPSLOCK_IDENTIFIER1

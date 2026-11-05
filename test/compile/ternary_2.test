@@ -1,0 +1,29 @@
+int puts(char *); // adds a trailing \n to any output
+
+int main(int argc, char **argv)
+{
+    char *msg;
+    msg = "print me maybe!";
+
+    return (argc == 1) ? 67 : puts(msg);
+}
+
+##
+
+{
+    "c4": {
+        "args": ["--compile", "--verify"]
+    },
+    "lli": [
+        {
+            "args": [],
+            "return-code": 67,
+            "stdout": ""
+        },
+        {
+            "args": ["blub"],
+            "return-code": 16,
+            "stdout": "print me maybe!\n"
+        }
+    ]
+}

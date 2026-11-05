@@ -1,0 +1,9 @@
+typedef unsigned uint32_t;
+uint32_t
+
+## expected output:
+tokenize/identifier_after_typedef.c:1:1: keyword typedef
+tokenize/identifier_after_typedef.c:1:9: keyword unsigned
+tokenize/identifier_after_typedef.c:1:18: identifier uint32_t
+tokenize/identifier_after_typedef.c:1:26: punctuator ;
+tokenize/identifier_after_typedef.c:2:1: identifier uint32_t

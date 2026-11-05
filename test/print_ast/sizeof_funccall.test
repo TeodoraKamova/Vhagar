@@ -1,0 +1,13 @@
+int g();
+
+int f()
+{
+    return sizeof g();
+}
+##
+int (g(void));
+
+int (f(void))
+{
+    return (sizeof (g()));
+}

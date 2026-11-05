@@ -1,0 +1,9 @@
+int (main(void))
+{
+	int b;
+	(sizeof(int));
+	(sizeof b);
+	(sizeof b);
+	((sizeof b) + 1);
+	return 0;
+}

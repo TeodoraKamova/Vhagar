@@ -1,0 +1,6 @@
+int main()
+{
+    int* arr;
+
+    return arr[0];
+}

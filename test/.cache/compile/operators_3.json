@@ -1,0 +1,10 @@
+
+{
+    "lli": [
+        {
+            "c4lib": true,
+            "return-code": 6,
+            "stdout": "0\n2\n7\n0 1 0\n0 1 0 1 0 1\n"
+        }
+    ]
+}

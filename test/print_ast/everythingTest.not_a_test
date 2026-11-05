@@ -1,0 +1,736 @@
+struct S {
+    int a;
+    struct {
+        int b;
+        struct {
+            int c;
+        } nested;
+    } deeper;
+};
+int main(){
+    sizeof(int) * 2;
+}
+struct S {
+    struct S *prev;
+    int *k;
+    int x;
+    char *y;
+    struct S *next;
+};
+int main()
+{
+    if(1) 
+        if(2)
+            ;
+        else
+            ;
+    else
+        ;
+    struct S
+		{
+			int x;
+            int p;
+		} s;
+    if (expr)
+        ;
+        else { juhu; }
+
+    while (1)
+    {
+    }
+
+    return 0;
+
+    
+}
+int main() 
+    {
+    struct S {
+        int x;
+        struct T {
+            char *y;
+        } t;
+    } s;
+    *p = &s;
+
+    s.t.y = "test";
+    p->t.y = "modified";
+
+    if (p->t.y[0] == 'm') {
+        return 1;
+    } else {
+        return 0;
+    }
+    }
+int main(void) {
+    goto label1;
+    label2: goto label3;
+    label1: goto label2;
+    label3: return 0;
+}
+ struct S s;
+int main(void) {
+    struct S s;
+    s.x = 42;
+    s.y = "example";
+    s.next = 0;
+    return 0;
+}
+int main(void) {
+    int x = 0;
+    while (x < 10)
+        ;
+    return x;
+}
+
+int f1(int x) {
+    return x + 1;
+}
+
+int f2(int x) {
+    return x - 1;
+}
+
+int main() {
+    func = f1;
+    int result = func(10);
+    func = f2;
+    result = func(result);
+    return result;
+}
+int main() {
+    sizeof(int);
+    int x = 10;
+    sizeof b;
+    int y = sizeof(x + 1) + sizeof(char);
+    int z = sizeof(int *);
+    return y + z;
+}
+int main() {
+    int arr;
+    int *p = arr;
+    int x = *(p + 1);
+    return x;
+}
+struct S {
+    int x;
+    int y;
+};
+
+int main(void) {
+    struct S s;
+    s.x = 10;
+    s.y = 20;
+    return s.x + s.y;
+}
+struct Node {
+    int value;
+    struct Node *next;
+};
+
+int main(void) {
+    struct Node n1;
+    struct Node n2;
+    n1.value = 10;
+    n1.next = &n2;
+    n2.value = 20;
+    n2.next = 0;
+
+    int x = n1.next->value;
+    return x;
+}
+void dummy(void) {
+    int x = 42;
+}
+
+int main(void) {
+    dummy();
+    return 0;
+}
+int main(void) {
+    int* arr;
+    int *p = arr;
+    p = p + 2;
+    int offset = sizeof(arr[0]) * 2;
+    return (p == arr + 2) && (offset == sizeof(int) * 2);
+    sizeof(int) * 2;
+}
+struct S {
+    int x;
+    int y;
+};
+
+// struct S create_struct(int a, int b) {
+//     struct S s;
+//     s.x = a;
+//     s.y = b;
+//     return s;
+// }
+
+// int main(void) {
+//     struct S s = create_struct(10, 20);
+//     return s.x + s.y;
+// }
+
+int main(void) {
+    int *p = arr;
+    *(p + 2) = 42;
+    *(p + 4) = *(p + 2) * 2;
+
+    return *(p + 4);
+    return n1.next->next->value;
+}
+
+int main(void) {
+    struct S s;
+    s.a = 1;
+    s.deeper.b = 2;
+    s.deeper.nested.c = 3;
+
+    return s.a + s.deeper.b + s.deeper.nested.c;
+    s->count = 3;
+    s->data[0] = 10;
+    s->data[1] = 20;
+    s->data[2] = 30;
+
+    return s->data[0] + s->data[1] + s->data[2];
+}
+struct A {
+    int x;
+    struct B {
+        int y;
+    } b;
+};
+
+int multiply_by_two(int a) {
+    return a * 2;
+}
+
+int main(void) {
+    struct A a;
+    a.x = 5;
+    a.b.y = 10;
+    a.b.func = multiply_by_two;
+
+    return a.b.func(a.x + a.b.y);
+}
+int main(void) {
+    int (*p) = &arr;
+    int sum = 0;
+
+    int i = 0;
+    int j = 0;
+    while (i < 3) {
+        j = 0;
+        while (j < 3) {
+            sum = sum + (*p)[i] * (*p)[j];
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+    return sum;
+}
+int main(void) {
+    int x = 10;
+    int *p = &x;
+    if (p && *p > 5) {
+        return *p;
+    } else {
+        return 0;
+    }
+}
+int recursive(int x) {
+    return (x > 0) ? (recursive(x - 1) + x) : 0;
+}
+
+int main(void) {
+    return recursive(10) * recursive(5) + (10 ? 20 : 30);
+    return (a && b || c) && (!(a || c) && (b < a + c)) || (a ? b : c);
+    while (x > 0) {
+        if (current->value > 0) {
+            int y = compute(current->value, x, (x / 2 == 0) ? add : subtract);
+            result = result + y;
+        } else {
+            result = result - x;
+        }
+
+        current = current->next;
+        x = x - 1;
+    }
+}
+int main(void) {
+    int a = 1;
+    int b = 2;
+    int c = 3;
+    int result = 0;
+
+    if (a < b) {
+        if (b < c) {
+            if (c > 0) {
+                result = a + b + c;
+            } else {
+                result = a - c;
+                if (result < 0) {
+                    result = -result;
+                }
+            }
+        } else {
+            result = b - a;
+        }
+    } else {
+        if (c > a) {
+            result = c * b;
+        } else {
+            while (a < 10) {
+                a = a + 1;
+                if (a == 5) {
+                    break;
+                } else {
+                    result = result + a;
+                }
+            }
+        }
+    }
+
+    return result;
+
+     int *px = &x;
+     int **ppx = &px;
+
+    if (**ppx == x) {
+        **ppx = y;
+    } else {
+        int *temp = *ppx;
+        *temp = z;
+    }
+
+    while (**ppx > 0) {
+        **ppx = **ppx - 1;
+        if (**ppx % 5 == 0) {
+            int *p_temp = &y;
+            *p_temp = **ppx;
+        }
+    }
+
+    return x + y + z;
+}
+int fibonacci(int n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+int factorial(int n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main(void) {
+    int fib = fibonacci(5);
+    int fact = factorial(4);
+
+    return fib + fact;
+}
+struct Container {
+    struct Inner {
+        int x;
+        struct Deep {
+            int y;
+        } deep;
+    } inner;
+};
+
+int main(void) {
+    struct Container c;
+    c.inner.x = 5;
+    c.inner.deep.y = 10;
+
+    int result = 0;
+
+    if (c.inner.x > 0) {
+        if (c.inner.deep.y > 0) {
+            result = c.inner.x + c.inner.deep.y;
+        } else {
+            result = c.inner.x - c.inner.deep.y;
+        }
+    } else {
+        result = c.inner.deep.y - c.inner.x;
+    }
+
+    return result;
+    sizeof(f(0));
+    a[0];
+    a.h;
+    a->g;
+    sizeof(sizeof a);
+}
+
+## expected output:
+struct S
+{
+        int  a;
+        struct 
+        {
+                int  b;
+                struct 
+                {
+                        int  c;
+                } nested;
+        } deeper;
+};
+int (main(void))
+{
+        ((sizeof(int)) * 2);
+}
+struct S
+{
+        struct S prev;
+        int (*k);
+        int  x;
+        char (*y);
+        struct S next;
+};
+int (main(void))
+{
+        if (1) 
+                if (2) 
+                        ;;
+        struct S
+        {
+                int  x;
+                int  p;
+        } s;
+        if (expr) 
+                ;
+        else {
+                juhu;
+        }
+        while (1) {
+        }
+        return 0;
+}
+int (main(void))
+{
+        struct S
+        {
+                int  x;
+                struct T
+                {
+                        char (*y);
+                } t;
+        } s;
+        ((*p) = (&s));
+        (((s.t).y) = "test");
+        (((p->t).y) = "modified");
+        if (((((p->t).y)[0]) == 'm')) {
+                return 1;
+        } else {
+                return 0;
+        }
+}
+int (main(void))
+{
+        goto label1;
+label2:
+        goto label3;
+label1:
+        goto label2;
+label3:
+        return 0;
+}
+struct S s;
+int (main(void))
+{
+        struct S s;
+        ((s.x) = 42);
+        ((s.y) = "example");
+        ((s.next) = 0);
+        return 0;
+}
+int (main(void))
+{
+        int x = 0;
+        while ((x < 10)) 
+                ;
+        return x;
+}
+int (f1(int x))
+{
+        return (x + 1);
+}
+int (f2(int x))
+{
+        return (x - 1);
+}
+int (main(void))
+{
+        (func = f1);
+        int result = (func(10));
+        (func = f2);
+        (result = (func(result)));
+        return result;
+}
+int (main(void))
+{
+        (sizeof(int));
+        int x = 10;
+        (sizeof b);
+        int y = ((sizeof((x + 1))) + (sizeof(char)));
+        int z = (sizeof(int*));
+        return (y + z);
+}
+int (main(void))
+{
+        int arr;
+        int (*p) = arr;
+        int x = (*(p + 1));
+        return x;
+}
+struct S
+{
+        int  x;
+        int  y;
+};
+int (main(void))
+{
+        struct S s;
+        ((s.x) = 10);
+        ((s.y) = 20);
+        return ((s.x) + (s.y));
+}
+struct Node
+{
+        int  value;
+        struct Node (*next);
+};
+int (main(void))
+{
+        struct Node;
+        struct Node;
+        ((n1.value) = 10);
+        ((n1.next) = (&n2));
+        ((n2.value) = 20);
+        ((n2.next) = 0);
+        int x = ((n1.next)->value);
+        return x;
+}
+void (dummy(void))
+{
+        int x = 42;
+}
+int (main(void))
+{
+        (dummy());
+        return 0;
+}
+int (main(void))
+{
+        int (*arr);
+        int (*p) = arr;
+        (p = (p + 2));
+        int offset = ((sizeof((arr[0]))) * 2);
+        return ((p == (arr + 2)) && (offset == ((sizeof(int)) * 2)));
+        ((sizeof(int)) * 2);
+}
+struct S
+{
+        int  x;
+        int  y;
+};
+int (main(void))
+{
+        int (*p) = arr;
+        ((*(p + 2)) = 42);
+        ((*(p + 4)) = ((*(p + 2)) * 2));
+        return (*(p + 4));
+        return (((n1.next)->next)->value);
+}
+int (main(void))
+{
+        struct S s;
+        ((s.a) = 1);
+        (((s.deeper).b) = 2);
+        ((((s.deeper).nested).c) = 3);
+        return (((s.a) + ((s.deeper).b)) + (((s.deeper).nested).c));
+        ((s->count) = 3);
+        (((s->data)[0]) = 10);
+        (((s->data)[1]) = 20);
+        (((s->data)[2]) = 30);
+        return ((((s->data)[0]) + ((s->data)[1])) + ((s->data)[2]));
+}
+struct A
+{
+        int  x;
+        struct B
+        {
+                int  y;
+        } b;
+};
+int (multiply_by_two(int a))
+{
+        return (a * 2);
+}
+int (main(void))
+{
+        struct A a;
+        ((a.x) = 5);
+        (((a.b).y) = 10);
+        (((a.b).func) = multiply_by_two);
+        return (func(((a.x) + ((a.b).y))));
+}
+int (main(void))
+{
+        int (*p) = (&arr);
+        int sum = 0;
+        int i = 0;
+        int j = 0;
+        while ((i < 3)) {
+                (j = 0);
+                while ((j < 3)) {
+                        (sum = (sum + (((*p)[i]) * ((*p)[j]))));
+                        (j = (j + 1));
+                }
+                (i = (i + 1));
+        }
+        return sum;
+}
+int (main(void))
+{
+        int x = 10;
+        int (*p) = (&x);
+        if ((p && ((*p) > 5))) {
+                return (*p);
+        } else {
+                return 0;
+        }
+}
+int (recursive(int x))
+{
+        return ((x > 0) ? ((recursive((x - 1))) + x) : 0);
+}
+int (main(void))
+{
+        return (((recursive(10)) * (recursive(5))) + (10 ? 20 : 30));
+        return ((((a && b) || c) && ((!(a || c)) && (b < (a + c)))) || (a ? b : c));
+        while ((x > 0)) {
+                if (((current->value) > 0)) {
+                        int y = (compute((current->value), x, (((x / 2) == 0) ? add : subtract)));
+                        (result = (result + y));
+                } else {
+                        (result = (result - x));
+                }
+                (current = (current->next));
+                (x = (x - 1));
+        }
+}
+int (main(void))
+{
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int result = 0;
+        if ((a < b)) {
+                if ((b < c)) {
+                        if ((c > 0)) {
+                                (result = ((a + b) + c));
+                        } else {
+                                (result = (a - c));
+                                if ((result < 0)) {
+                                        (result = (-result));
+                                }
+                        }
+                } else {
+                        (result = (b - a));
+                }
+        } else {
+                if ((c > a)) {
+                        (result = (c * b));
+                } else {
+                        while ((a < 10)) {
+                                (a = (a + 1));
+                                if ((a == 5)) {
+                                        break;
+                                } else {
+                                        (result = (result + a));
+                                }
+                        }
+                }
+        }
+        return result;
+        int (*px) = (&x);
+        int (**ppx) = (&px);
+        if (((*(*ppx)) == x)) {
+                ((*(*ppx)) = y);
+        } else {
+                int (*temp) = (*ppx);
+                ((*temp) = z);
+        }
+        while (((*(*ppx)) > 0)) {
+                ((*(*ppx)) = ((*(*ppx)) - 1));
+                if ((((*(*ppx)) % 5) == 0)) {
+                        int (*p_temp) = (&y);
+                        ((*p_temp) = (*(*ppx)));
+                }
+        }
+        return ((x + y) + z);
+}
+int (fibonacci(int n))
+{
+        if ((n <= 1)) {
+                return n;
+        } else {
+                return ((fibonacci((n - 1))) + (fibonacci((n - 2))));
+        }
+}
+int (factorial(int n))
+{
+        if ((n <= 1)) {
+                return 1;
+        } else {
+                return (n * (factorial((n - 1))));
+        }
+}
+int (main(void))
+{
+        int fib = (fibonacci(5));
+        int fact = (factorial(4));
+        return (fib + fact);
+}
+struct Container
+{
+        struct Inner
+        {
+                int  x;
+                struct Deep
+                {
+                        int  y;
+                } deep;
+        } inner;
+};
+int (main(void))
+{
+        struct Container c;
+        (((c.inner).x) = 5);
+        ((((c.inner).deep).y) = 10);
+        int result = 0;
+        if ((((c.inner).x) > 0)) {
+                if (((((c.inner).deep).y) > 0)) {
+                        (result = (((c.inner).x) + (((c.inner).deep).y)));
+                } else {
+                        (result = (((c.inner).x) - (((c.inner).deep).y)));
+                }
+        } else {
+                (result = ((((c.inner).deep).y) - ((c.inner).x)));
+        }
+        return result;
+        (sizeof((f(0))));
+        (a[0]);
+        (a.h);
+        (a->g);
+        (sizeof((sizeof a)));
+}

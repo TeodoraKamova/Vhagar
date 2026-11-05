@@ -1,0 +1,13 @@
+'a'
+'0'
+'\n'
+'\\'
+'\''
+'/'
+##
+tokenize/char_literals.c:1:1: constant 'a'
+tokenize/char_literals.c:2:1: constant '0'
+tokenize/char_literals.c:3:1: constant '\n'
+tokenize/char_literals.c:4:1: constant '\\'
+tokenize/char_literals.c:5:1: constant '\''
+tokenize/char_literals.c:6:1: constant '/'

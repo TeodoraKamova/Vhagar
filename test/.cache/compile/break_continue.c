@@ -1,0 +1,37 @@
+int c4_atoi(char *);
+void c4_print_int(int);
+
+int main(int argc, char **argv)
+{
+    if (argc == 1)
+        return 1;
+
+    int sz;
+    sz = c4_atoi(argv[1]);
+
+    int i; i = 0;
+    while (i < sz)
+    {
+
+        if (i == 5)
+            break;
+
+        c4_print_int(i);
+
+        i = i + 1;
+    }
+
+    i = -1;
+    while ((i = i + 1) < sz)
+    {
+
+        if (i % 2 == 0)
+            continue;
+
+        c4_print_int(i);
+    }
+
+    return 0;
+}
+
+

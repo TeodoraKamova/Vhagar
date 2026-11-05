@@ -1,0 +1,13 @@
+
+{
+    "lli": [
+        {
+            "args": [],
+            "return-code": 15
+        },
+        {
+            "args": ["a"],
+            "return-code": 7
+        }
+    ]
+}

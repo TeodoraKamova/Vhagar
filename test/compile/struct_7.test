@@ -1,0 +1,26 @@
+struct T;
+
+struct S
+{
+    struct T* t;
+};
+
+struct T
+{
+    int x;
+};
+
+int main()
+{
+    struct S s;
+    struct T t;
+
+    s.t = &t;
+    t.x = 11;
+
+    return s.t->x;
+}
+
+##
+
+{ "lli": [{ "return-code": 11 }] }

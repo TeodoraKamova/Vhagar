@@ -1,0 +1,7 @@
+struct S
+{
+    struct S* p;
+    struct S  s;
+};
+##
+parse/sema_struct_members_2.c:4:15: error:

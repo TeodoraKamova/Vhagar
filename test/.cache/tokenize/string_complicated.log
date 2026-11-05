@@ -1,0 +1,3 @@
+tokenize/string_complicated.c:1:1: string-literal "\""
+tokenize/string_complicated.c:2:1: string-literal ""
+tokenize/string_complicated.c:2:3: string-literal ""

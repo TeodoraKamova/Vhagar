@@ -1,0 +1,6 @@
+int f(int)
+{
+    return 0;
+}
+##
+parse/sema_missing_param_name.c:1:10: error:

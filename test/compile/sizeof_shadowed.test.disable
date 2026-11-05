@@ -1,0 +1,28 @@
+void c4_print_int(int);
+void c4_print_str(char*);
+
+int main()
+{
+    int i;
+    int res;
+    i = res = 0;
+    while (i < 10)
+    {
+        char res;
+        {
+            res = 4;
+            i += sizeof res;
+            c4_print_int(i);
+            c4_print_str(" ");
+        }
+    }
+
+    return res;
+}
+
+##
+
+{
+    "c4" : {"args" : ["--compile"]},
+           "lli" : [ {"c4lib" : true, "return-code" : 0, "stdout" : "1 2 3 4 5 6 7 8 9 10 "} ]
+}

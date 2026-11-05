@@ -1,0 +1,17 @@
+struct S
+{
+    int x;
+};
+
+int main()
+{
+    struct S  s;
+    struct S *p;
+
+    p = &s;
+
+    (*p).x = 5;
+
+    return (*p).x;
+}
+

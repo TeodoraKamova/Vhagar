@@ -1,0 +1,119 @@
+void c4_print_int(int);
+void c4_print_str(char *);
+
+int main(void)
+{
+    int x; x = 10;
+    int y; y = 5;
+    int z; z = 0;
+    int d; d = 2;
+    int f; f = 1;
+
+    // Arithmetic Operators
+    z = x + y;
+    z = x - y;
+    z = x * y;
+    z = x / y;
+    z = x % y;
+
+    c4_print_int(z);
+    c4_print_str("\n");
+
+    // Assignment Operators
+    x += 5;
+    x -= 3;
+    x *= 2;
+    x /= 4;
+    x %= 3;
+    x >>= 3;
+    x <<= 3;
+    x ^= d;
+    x &= d;
+    x |= d;
+
+    c4_print_int(x);
+    c4_print_str("\n");
+
+    // Bitwise Operators
+    z = d + f;
+    z = d - f;
+    z = d * f;
+    z = d / f;
+    z = d % f;
+    z = d << f;
+    z = d >> f;
+    z = d ^ y;
+    z = d & y;
+    z = d | y;
+
+    c4_print_int(z);
+    c4_print_str("\n");
+
+    // Unary Operators
+    z = ~d;
+    ++z;
+    --z;
+
+    // Logical Operators
+    int a; a = 1;
+    int b; b = 0;
+
+    int logicalAnd;
+    int logicalOr;
+    int logicalNot;
+
+    logicalAnd = a && b;
+    logicalOr = a || b;
+    logicalNot = !a;
+
+    c4_print_int(logicalAnd);
+    c4_print_str(" ");
+    c4_print_int(logicalOr);
+    c4_print_str(" ");
+    c4_print_int(logicalNot);
+    c4_print_str("\n");
+
+    // Relational Operators
+    int greaterThan;
+    int lessThan;
+    int greaterOrEqual;
+    int lessOrEqal;
+    int equalTo;
+    int notEqual;
+
+    greaterThan = x > y;
+    lessThan = x < y;
+    greaterOrEqual = x >= y;
+    lessOrEqal = x <= y;
+    equalTo = x == y;
+    notEqual = x != y;
+
+    c4_print_int(greaterThan);
+    c4_print_str(" ");
+    c4_print_int(lessThan);
+    c4_print_str(" ");
+    c4_print_int(greaterOrEqual);
+    c4_print_str(" ");
+    c4_print_int(lessOrEqal);
+    c4_print_str(" ");
+    c4_print_int(equalTo);
+    c4_print_str(" ");
+    c4_print_int(notEqual);
+    c4_print_str("\n");
+
+    return x + y + z - d * f % a + b + logicalAnd + logicalNot / (logicalOr | 1) |
+           logicalNot - greaterThan + lessThan + greaterOrEqual + lessOrEqal + lessOrEqal -
+               equalTo * 2 - notEqual; // 6
+}
+
+##
+
+{
+    "lli": [
+        {
+            "c4lib": true,
+            "return-code": 6,
+            "stdout": "0\n2\n7\n0 1 0\n0 1 0 1 0 1\n"
+        }
+    ]
+}

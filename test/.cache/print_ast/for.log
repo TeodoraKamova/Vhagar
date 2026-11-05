@@ -1,0 +1,12 @@
+int (main(void))
+{
+	int c = 1;
+	{
+		int i = 0;
+		while ((i < 10)) {
+			(c = (c * 2));
+			(i = (i + 1));
+		}
+	}
+	return c;
+}

@@ -1,0 +1,35 @@
+void c4_print_str(char*);
+int c4_strlen(char*);
+void* c4_memcpy(void* a, void* b, int size);
+void* c4_malloc(int);
+
+void tail_recursive_reverse(char* str, int start, int end)
+{
+    if (start >= end)
+        return;
+    char temp;
+    temp = str[start];
+    str[start] = str[end];
+    str[end] = temp;
+    tail_recursive_reverse(str, start + 1, end - 1);
+}
+
+void reverse(char* str)
+{
+    int len;
+    len = c4_strlen(str);
+    tail_recursive_reverse(str, 0, len - 1);
+}
+
+int main()
+{
+    char* hi;
+    int size;
+    size = sizeof("!dlroW olleH");
+    hi = c4_malloc(sizeof(int) * size);
+    c4_memcpy(hi, "!dlroW olleH", size);
+
+    reverse(hi);
+    c4_print_str(hi);
+}
+

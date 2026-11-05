@@ -1,0 +1,9 @@
+
+{
+    "lli": [
+        {
+            "c4lib": true,
+            "stdout": "inliner_11.ll\n"
+        }
+    ]
+}

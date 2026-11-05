@@ -1,0 +1,10 @@
+tokenize/keywords_extra.c:1:1: keyword _Alignas
+tokenize/keywords_extra.c:2:1: keyword _Alignof
+tokenize/keywords_extra.c:3:1: keyword _Atomic
+tokenize/keywords_extra.c:4:1: keyword _Bool
+tokenize/keywords_extra.c:5:1: keyword _Complex
+tokenize/keywords_extra.c:6:1: keyword _Generic
+tokenize/keywords_extra.c:7:1: keyword _Imaginary
+tokenize/keywords_extra.c:8:1: keyword _Noreturn
+tokenize/keywords_extra.c:9:1: keyword _Static_assert
+tokenize/keywords_extra.c:10:1: keyword _Thread_local

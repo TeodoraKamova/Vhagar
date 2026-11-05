@@ -1,0 +1,34 @@
+int isqrt(int x)
+{
+    if (x < 0)
+        return 0 - 1;
+
+    int a;
+    int b;
+    int m; // limits and midpoint
+
+    a = 1;
+    b = (x / 32) + 8; // first guess at an upper limit
+    if (b > 65535)
+        b = 65535;
+
+    m = (a + b) / 2;
+    if (m * m > x)
+        b = m - 1;
+    else
+        a = m + 1;
+
+    while (b >= a)
+    {
+        m = (a + b) / 2;
+        if (m * m > x)
+            b = m - 1;
+        else
+            a = m + 1;
+    }
+
+    return a - 1;
+}
+
+int main() { return isqrt(123456) != 351; }
+

@@ -1,0 +1,184 @@
+// from hackers delight book, may be slightly modified
+// NOTE: these algorithms are no longer correct, as we are not using
+// unsigned types, thus shifts will no longer (sometimes) work as
+// expected!!
+
+int abs(int a) { return a < 0 ? -a : a; }
+
+// magic int
+struct mu
+{
+    int M; // magic number
+    int a; // "add" indicator
+    int s; // shift amount
+};
+
+// magic signed
+struct ms
+{
+    int M; // Magic number
+    int s;
+}; // and shift amount.
+
+struct mu magicu(int d)
+{
+    // Must have 1 <= d <= 2**32-1.
+    int p;
+    int p32;
+    int q;
+    int r;
+    int delta;
+    struct mu magu;
+    magu.a = 0;             // Initialize "add" indicator.
+    p = 31;                 // Initialize p.
+    q = 2147483647 / d;     // Initialize q = (2**p - 1)/d.
+    r = 2147483647 - q * d; // Init. r = rem(2**p - 1, d).
+    do
+    {
+        p = p + 1;
+        if (p == 32)
+            p32 = 1; // Set p32 = 2**(p-32).
+        else
+            p32 = 2 * p32;
+        if (r + 1 >= d - r)
+        {
+            if (q >= 2147483647)
+                magu.a = 1;
+            q = 2 * q + 1;     // Update q.
+            r = 2 * r + 1 - d; // Update r.
+        }
+        else
+        {
+            if (q >= (1073741824 << 1))
+                magu.a = 1;
+            q = 2 * q;
+            r = 2 * r + 1;
+        }
+        delta = d - 1 - r;
+    } while (p < 64 && p32 < delta);
+    magu.M = q + 1;  // Magic number and
+    magu.s = p - 32; // shift amount to return
+    return magu;     // (magu.a was set above).
+}
+
+struct mu magicu2(int d)
+{
+    // Must have 1 <= d <= 2**32-1.
+    int p;
+    int p32;
+    int q;
+    int r;
+    int delta;
+    struct mu magu;
+    magu.a = 0;             // Initialize "add" indicator.
+    p = 31;                 // Initialize p.
+    q = 2147483647 / d;     // Initialize q = (2**p - 1)/d.
+    r = 2147483647 - q * d; // Init. r = rem(2**p - 1, d).
+    do
+    {
+        p = p + 1;
+        if (p == 32)
+            p32 = 1; // Set p32 = 2**(p-32).
+        else
+            p32 = 2 * p32;
+        if (r + 1 >= d - r)
+        {
+            if (q >= 2147483647)
+                magu.a = 1;
+            q = 2 * q + 1;     // Update q.
+            r = 2 * r + 1 - d; // Update r.
+        }
+        else
+        {
+            if (q >= (1073741824 << 1))
+                magu.a = 1;
+            q = 2 * q;
+            r = 2 * r + 1;
+        }
+        delta = d - 1 - r;
+    } while (p < 64 && p32 < delta);
+    magu.M = q + 1;  // Magic number and
+    magu.s = p - 32; // shift amount to return
+    return magu;     // (magu.a was set above).
+}
+
+// Must have 2 <= d <= 2**31-1
+// or -2**31 <= d <= -2.
+struct ms magic(int d)
+{
+    int p;
+    int ad;
+    int anc;
+    int delta;
+    int q1;
+    int r1;
+    int q2;
+    int r2;
+    int t;
+    int two31;
+    two31 = (1073741824 << 1); // 2**31.
+    struct ms mag;
+    ad = abs(d);
+    t = two31 + ((int)d >> 31);
+    anc = t - 1 - t % ad;  // Absolute value of nc.
+    p = 31;                // Init. p.
+    q1 = two31 / anc;      // Init. q1 = 2**p/|nc|.
+    r1 = two31 - q1 * anc; // Init. r1 = rem(2**p, |nc|).
+    q2 = two31 / ad;       // Init. q2 = 2**p/|d|.
+    r2 = two31 - q2 * ad;  // Init. r2 = rem(2**p, |d|).
+    do
+    {
+        p = p + 1;
+        q1 = 2 * q1; // Update q1 = 2**p/|nc|.
+        r1 = 2 * r1; // Update r1 = rem(2**p, |nc|).
+        if (r1 >= anc)
+        {                // (Must be an int
+            q1 = q1 + 1; // comparison here.)
+            r1 = r1 - anc;
+        }
+        q2 = 2 * q2; // Update q2 = 2**p/|d|.
+        r2 = 2 * r2; // Update r2 = rem(2**p, |d|).
+        if (r2 >= ad)
+        {                // (Must be an int
+            q2 = q2 + 1; // comparison here.)
+            r2 = r2 - ad;
+        }
+        delta = ad - r2;
+    } while (q1 < delta || (q1 == delta && r1 == 0));
+    mag.M = q2 + 1;
+    if (d < 0)
+        mag.M = -mag.M; // Magic number and
+    mag.s = p - 32;     // shift amount to return.
+    return mag;
+}
+
+// make sure we compute the same as gcc
+int main()
+{
+    struct mu uns1;
+    struct mu uns2;
+    uns1 = magicu(50);
+    uns2 = magicu2(50);
+
+    if (uns1.a != uns2.a)
+        return 1;
+    if (uns1.s != uns2.s)
+        return 2;
+    if (uns1.M != uns2.M)
+        return 3;
+
+    struct ms sig;
+    sig = magic(-15);
+
+    if (sig.s != 27)
+        return 4;
+
+    if (sig.M != 2147483647)
+        return 5;
+
+    return 0;
+}
+
+##
+
+{ "lli" : [ {"return-code" : 0} ] }

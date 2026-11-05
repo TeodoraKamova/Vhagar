@@ -1,0 +1,3 @@
+tokenize/digraph_modulo.c:1:1: punctuator %:
+tokenize/digraph_modulo.c:1:3: punctuator %
+tokenize/digraph_modulo.c:1:4: identifier id

@@ -1,0 +1,17 @@
+struct S
+{
+    int x;
+    int y;
+};
+
+int main()
+{
+    struct S s;
+    struct S *p;
+    p = &s;
+
+    p->y = 99;
+
+    return p->y;
+}
+

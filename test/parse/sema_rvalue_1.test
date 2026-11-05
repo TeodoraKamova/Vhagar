@@ -1,0 +1,8 @@
+int main()
+{
+    int x;
+    &x = 0;
+    return 0;
+}
+##
+parse/sema_rvalue_1.c:4:8: error:

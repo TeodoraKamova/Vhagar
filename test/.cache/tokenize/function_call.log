@@ -1,0 +1,7 @@
+tokenize/function_call.c:1:1: identifier is_prime2
+tokenize/function_call.c:1:10: punctuator (
+tokenize/function_call.c:1:11: identifier x
+tokenize/function_call.c:1:12: punctuator ,
+tokenize/function_call.c:1:14: constant 23
+tokenize/function_call.c:1:16: punctuator )
+tokenize/function_call.c:1:17: punctuator ;

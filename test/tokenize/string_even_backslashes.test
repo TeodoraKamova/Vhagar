@@ -1,0 +1,4 @@
+"\\\\"
+
+##
+tokenize/string_even_backslashes.c:1:1: string-literal "\\\\"

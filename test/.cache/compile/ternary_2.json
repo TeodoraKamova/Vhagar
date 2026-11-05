@@ -1,0 +1,18 @@
+
+{
+    "c4": {
+        "args": ["--compile", "--verify"]
+    },
+    "lli": [
+        {
+            "args": [],
+            "return-code": 67,
+            "stdout": ""
+        },
+        {
+            "args": ["blub"],
+            "return-code": 16,
+            "stdout": "print me maybe!\n"
+        }
+    ]
+}

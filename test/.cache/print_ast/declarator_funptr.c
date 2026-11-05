@@ -1,0 +1,7 @@
+int (*f())();
+int(*g());
+int* h();
+int* (i());
+
+// todo: maybe it should be int (*(f(void)))() without void,
+// but there should definately be a () at the end by f

@@ -1,0 +1,13 @@
+a / b
+a /= b
+// y
+id
+
+## expected output:
+tokenize/lots_of_slashes.c:1:1: identifier a
+tokenize/lots_of_slashes.c:1:3: punctuator /
+tokenize/lots_of_slashes.c:1:5: identifier b
+tokenize/lots_of_slashes.c:2:1: identifier a
+tokenize/lots_of_slashes.c:2:3: punctuator /=
+tokenize/lots_of_slashes.c:2:6: identifier b
+tokenize/lots_of_slashes.c:4:1: identifier id

@@ -1,0 +1,4 @@
+
+{
+    "c4" : {"args" : [ "--compile", "--verify" ]}, "lli" : [ {"c4lib" : true, "return-code" : 25} ]
+}

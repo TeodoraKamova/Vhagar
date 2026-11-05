@@ -1,0 +1,4 @@
+# ##
+##
+tokenize/hashtag.c:1:1: punctuator #
+tokenize/hashtag.c:1:3: punctuator ##

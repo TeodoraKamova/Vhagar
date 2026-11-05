@@ -1,0 +1,10 @@
+
+struct S
+{
+    int x;
+    int y;
+    int  ;
+};
+
+##
+parse/bad_struct_semicolon.c:6:10: error:

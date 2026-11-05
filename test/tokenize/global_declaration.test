@@ -1,0 +1,7 @@
+int max_thread_count = 4;
+##
+tokenize/global_declaration.c:1:1: keyword int
+tokenize/global_declaration.c:1:5: identifier max_thread_count
+tokenize/global_declaration.c:1:22: punctuator =
+tokenize/global_declaration.c:1:24: constant 4
+tokenize/global_declaration.c:1:25: punctuator ;

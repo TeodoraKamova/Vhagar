@@ -1,0 +1,26 @@
+int main(int argc, char **argv)
+{
+    int x;
+
+    x = (argc % 2 == 0) ? 19 : 21;
+
+    return x;
+}
+
+##
+
+{
+    "c4": {
+        "args": ["--compile", "--verify"]
+    },
+    "lli": [
+        {
+            "args": [],
+            "return-code": 21
+        },
+        {
+            "args": ["a", "b", "c"],
+            "return-code": 19
+        }
+    ]
+}

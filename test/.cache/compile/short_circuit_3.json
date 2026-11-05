@@ -1,0 +1,12 @@
+
+{
+    "c4": {
+        "args": ["--compile", "--optimize"]
+    },
+    "lli": [
+        {
+            "stdout": "print me! #1\nprint me! #2\n",
+            "return-code": 99
+        }
+    ]
+}

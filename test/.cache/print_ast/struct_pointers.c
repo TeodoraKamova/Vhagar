@@ -1,0 +1,20 @@
+struct Point {
+    int x;
+    int y;
+};
+
+struct Circle {
+    int radius;
+    struct Point* center;
+};
+
+int main() {
+    struct Point* p = malloc(sizeof(struct Point));
+    p->x = 10;
+    p->y = 20;
+
+    struct Circle* c = (struct Circle*)p;  
+    c->radius = 5;  
+ 
+    return 0;
+}

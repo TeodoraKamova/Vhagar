@@ -1,0 +1,15 @@
+int main()
+{
+    int var;
+    sizeof (sizeof(int));
+    sizeof (sizeof var);
+    return 0;
+}
+##
+int (main(void))
+{
+    int var;
+    (sizeof (sizeof(int)));
+    (sizeof (sizeof var));
+    return 0;
+}

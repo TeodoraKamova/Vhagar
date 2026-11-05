@@ -1,0 +1,5 @@
+int f() {
+    return 0;
+
+##
+parse/missing_brace.c:4:1: error:

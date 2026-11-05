@@ -1,0 +1,11 @@
+
+{
+    "c4": {
+        "args": ["--compile", "--verify"]
+    },
+    "lli": [
+        {
+            "return-code": 4
+        }
+    ]
+}

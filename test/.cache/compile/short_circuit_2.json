@@ -1,0 +1,9 @@
+
+{
+    "lli": [
+        {
+            "stdout": "this should be printed!\nthis should be printed!\n",
+            "return-code": 99
+        }
+    ]
+}

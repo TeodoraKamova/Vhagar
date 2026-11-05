@@ -1,0 +1,14 @@
+<:
+:>
+<%
+%>
+%:
+%:%:
+
+##
+tokenize/punctuators_digraphs.c:1:1: punctuator <:
+tokenize/punctuators_digraphs.c:2:1: punctuator :>
+tokenize/punctuators_digraphs.c:3:1: punctuator <%
+tokenize/punctuators_digraphs.c:4:1: punctuator %>
+tokenize/punctuators_digraphs.c:5:1: punctuator %:
+tokenize/punctuators_digraphs.c:6:1: punctuator %:%:

@@ -1,0 +1,5 @@
+int main()
+{
+    int a = 0, b = 2, *c = &a;
+    return a + b - *c;
+}

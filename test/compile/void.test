@@ -1,0 +1,16 @@
+void f()
+{
+}
+
+int main()
+{
+    f();
+
+    return 99;
+}
+
+##
+
+{
+    "lli": [{ "return-code": 99 }]
+}
